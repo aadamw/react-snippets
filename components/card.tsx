@@ -15,7 +15,7 @@ type CardProps = {
 
 export function Card(props: CardProps) {
   return (
-    <article className="border border-[hsla(0,0%,100%,0.14)] p-4 rounded-xl">
+    <article className="min-h-[210px] border relative overflow-hidden w-full grid grid-rows-[max-content,minmax(0,1fr),max-content] border-[hsla(0,0%,100%,0.14)] p-4 rounded-xl">
       <div>
         <h2>{props.title}</h2>
         <span className="text-xs text-white/60">{props.description}</span>

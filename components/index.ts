@@ -1,3 +1,4 @@
+import { Meteors } from './meteors/meteors'
 import { VercelTabs } from './vercel-tabs/vercel-tabs'
 
 export const SnippetComponents = [
@@ -11,5 +12,12 @@ export const SnippetComponents = [
       { name: 'radix-ui', href: 'https://www.radix-ui.com/' },
       { name: 'framer-motion', href: 'https://www.framer.com/motion/' },
     ],
+  },
+  {
+    id: 'Meteors',
+    title: 'Meteors',
+    description: 'Card with meteors',
+    Component: Meteors,
+    technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
   },
 ]
