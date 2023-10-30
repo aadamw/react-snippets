@@ -1,3 +1,4 @@
+import { ConfirmButton } from './confirm-button/confirm-button'
 import { Meteors } from './meteors/meteors'
 import { VercelTabs } from './vercel-tabs/vercel-tabs'
 
@@ -19,5 +20,12 @@ export const SnippetComponents = [
     description: 'Card with meteors',
     Component: Meteors,
     technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
+  },
+  {
+    id: 'Confirm-button',
+    title: 'Confirm Button',
+    description: 'Button with double-click confirmation',
+    Component: ConfirmButton,
+    technologies: [],
   },
 ]

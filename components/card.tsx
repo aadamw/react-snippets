@@ -20,10 +20,10 @@ export function Card(props: CardProps) {
         <h2>{props.title}</h2>
         <span className="text-xs text-white/60">{props.description}</span>
       </div>
-      <div className="py-8 flex justify-center">{props.children}</div>
+      <div className="py-8 flex justify-center items-center">{props.children}</div>
       <footer className="text-sm text-white/60">
         <ul className="flex flex-wrap gap-1">
-          {props.technologies.map(tech => (
+          {props.technologies?.map(tech => (
             <li key={tech.name}>
               <a
                 target="__blank"
