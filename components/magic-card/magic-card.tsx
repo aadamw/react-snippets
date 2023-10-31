@@ -32,7 +32,7 @@ export function MagicCard() {
   const ref = useMouseMove<HTMLDivElement>()
 
   return (
-    <div ref={ref} className="absolute inset-0">
+    <div ref={ref} className="absolute z-[-1] inset-0">
       <div className="bg-gradient-to-r from-[#31996a] from-10% to-[#96320c] rotate-45 to-60%  absolute left-[--x] top-[--y] z-[-1] h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full blur-xl pointer-events-none" />
     </div>
   )
