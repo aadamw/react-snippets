@@ -3,7 +3,7 @@ import { Meteors } from './meteors/meteors'
 import { PendingButton } from './pending-button/pending-button'
 import { VercelTabs } from './vercel-tabs/vercel-tabs'
 
-type Technology = {
+export type Technology = {
   name: string
   href: string
 }

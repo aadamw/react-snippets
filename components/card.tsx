@@ -1,16 +1,12 @@
 import * as React from 'react'
 import { ArrowRightUp } from './icons'
-
-type Technology = {
-  name: string
-  href: string
-}
+import { Technology } from '.'
 
 type CardProps = {
   children: React.ReactNode
   title: string
   description: string
-  technologies: Technology[]
+  technologies?: Array<Technology>
 }
 
 export function Card(props: CardProps) {
