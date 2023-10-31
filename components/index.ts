@@ -1,4 +1,5 @@
 import { ConfirmButton } from './confirm-button/confirm-button'
+import { MagicCard } from './magic-card/magic-card'
 import { Meteors } from './meteors/meteors'
 import { PendingButton } from './pending-button/pending-button'
 import { VercelTabs } from './vercel-tabs/vercel-tabs'
@@ -46,5 +47,12 @@ export const SnippetComponents = [
     title: 'Pending Button',
     description: 'Button with prolonged pending animation',
     Component: PendingButton,
+  },
+  {
+    id: 'Magic-Card',
+    title: 'Magic Card',
+    description: 'Card with hover animation',
+    Component: MagicCard,
+    technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
   },
 ] satisfies Array<SnippetComponent>
