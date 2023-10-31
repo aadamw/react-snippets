@@ -1,6 +1,20 @@
 import { ConfirmButton } from './confirm-button/confirm-button'
 import { Meteors } from './meteors/meteors'
+import { PendingButton } from './pending-button/pending-button'
 import { VercelTabs } from './vercel-tabs/vercel-tabs'
+
+type Technology = {
+  name: string
+  href: string
+}
+
+type SnippetComponent = {
+  id: string
+  title: string
+  description: string
+  Component: React.FC
+  technologies?: Array<Technology>
+}
 
 export const SnippetComponents = [
   {
@@ -26,6 +40,11 @@ export const SnippetComponents = [
     title: 'Confirm Button',
     description: 'Button with double-click confirmation',
     Component: ConfirmButton,
-    technologies: [],
   },
-]
+  {
+    id: 'Pending-button',
+    title: 'Pending Button',
+    description: 'Button with prolonged pending animation',
+    Component: PendingButton,
+  },
+] satisfies Array<SnippetComponent>
