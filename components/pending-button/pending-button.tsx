@@ -15,7 +15,7 @@ async function minDelay<T>(promise: Promise<T>, ms: number) {
 export function useDelaySubmit<T>(handleSubmit: () => Promise<T>, ms = 2000) {
   const [isPending, setIsPending] = React.useState(false)
 
-  async function handleClick(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
+  async function handleClick() {
     setIsPending(true)
 
     await minDelay(handleSubmit(), ms)

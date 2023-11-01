@@ -3,8 +3,8 @@ import { GeistSans } from 'geist/font'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'React snippets',
-  description: 'React snippets by Adam',
+  title: 'React UI Snippets',
+  description: 'React UI Snippets by Adam',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
