@@ -9,7 +9,7 @@ export function DotPattern() {
           <circle id="pattern-circle" cx="1" cy="1" r="1"></circle>
         </pattern>
       </defs>
-      <rect width="100%" height="100%" stroke-width="0" fill="url(#:r3d:)"></rect>
+      <rect width="100%" height="100%" strokeWidth="0" fill="url(#:r3d:)"></rect>
     </svg>
   )
 }
