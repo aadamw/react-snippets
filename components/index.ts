@@ -1,4 +1,5 @@
 import { ConfirmButton } from './confirm-button/confirm-button'
+import { DotPattern } from './dot-pattern/dot-pattern'
 import { MagicCardV2 } from './magic-card-v2/magic-card-v2'
 import { MagicCard } from './magic-card/magic-card'
 import { Meteors } from './meteors/meteors'
@@ -54,6 +55,13 @@ export const SnippetComponents = [
     title: 'Magic Card',
     description: 'Card with hover animation',
     Component: MagicCard,
+    technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
+  },
+  {
+    id: 'Dot-Pattern',
+    title: 'Dot Pattern',
+    description: 'Pattern with dots',
+    Component: DotPattern,
     technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
   },
   {
