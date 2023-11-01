@@ -2,7 +2,7 @@ export function DotPattern() {
   return (
     <svg
       aria-hidden="true"
-      className="pointer-events-none absolute inset-0 h-full w-full fill-gray-400/40 [mask-image:radial-gradient(200px_circle_at_center,white,transparent)]"
+      className="pointer-events-none absolute inset-0 h-full w-full fill-gray-400/40 [mask-image:radial-gradient(250px_circle_at_center,white,transparent)]"
     >
       <defs>
         <pattern id=":r3d:" width="16" height="16" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse" x="0" y="0">
