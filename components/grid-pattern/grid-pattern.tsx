@@ -9,9 +9,9 @@ export function GridPattern() {
           <path d="M.5 40V.5H40" fill="none" strokeDasharray="0" />
         </pattern>
       </defs>
-      <rect width="100%" height="100%" stroke-width="0" fill="url(#grid-pattern)" />
+      <rect width="100%" height="100%" strokeWidth="0" fill="url(#grid-pattern)" />
       <svg x="-1" y="-1" className="overflow-visible">
-        <rect strokeWidth="0" width="39" height="39" x="161" y="161" />
+        <rect strokeWidth="0" width="39" height="39" x="201" y="161" />
         <rect strokeWidth="0" width="39" height="39" x="201" y="41" />
         <rect strokeWidth="0" width="39" height="39" x="321" y="81" />
         <rect strokeWidth="0" width="39" height="39" x="241" y="241" />
