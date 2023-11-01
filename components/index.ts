@@ -1,4 +1,5 @@
 import { ConfirmButton } from './confirm-button/confirm-button'
+import { MagicCardV2 } from './magic-card-v2/magic-card-v2'
 import { MagicCard } from './magic-card/magic-card'
 import { Meteors } from './meteors/meteors'
 import { PendingButton } from './pending-button/pending-button'
@@ -54,5 +55,15 @@ export const SnippetComponents = [
     description: 'Card with hover animation',
     Component: MagicCard,
     technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
+  },
+  {
+    id: 'Magic-Card-v2',
+    title: 'Magic Card v2',
+    description: 'Card with hover animation',
+    Component: MagicCardV2,
+    technologies: [
+      { name: 'tailwindcss', href: 'https://tailwindcss.com/' },
+      { name: 'framer-motion', href: 'https://www.framer.com/motion/' },
+    ],
   },
 ] satisfies Array<SnippetComponent>
