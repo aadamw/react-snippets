@@ -3,6 +3,7 @@ import { DotPattern } from './dot-pattern/dot-pattern'
 import { GridPattern } from './grid-pattern/grid-pattern'
 import { MagicCardV2 } from './magic-card-v2/magic-card-v2'
 import { MagicCard } from './magic-card/magic-card'
+import { MarqueeDemo } from './marquee/marquee'
 import { Meteors } from './meteors/meteors'
 import { PendingButton } from './pending-button/pending-button'
 import { VercelTabs } from './vercel-tabs/vercel-tabs'
@@ -70,6 +71,13 @@ export const SnippetComponents = [
     title: 'Grid Pattern',
     description: 'Pattern with grid',
     Component: GridPattern,
+    technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
+  },
+  {
+    id: 'Marquee',
+    title: 'Marquee',
+    description: 'Marquee with animation',
+    Component: MarqueeDemo,
     technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
   },
   {

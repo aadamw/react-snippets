@@ -9,6 +9,7 @@ const config: Config = {
       },
       animation: {
         'meteor-effect': 'meteor 5s linear infinite',
+        marquee: 'marquee var(--duration) linear infinite',
       },
       keyframes: {
         meteor: {
@@ -18,6 +19,10 @@ const config: Config = {
             transform: 'rotate(215deg) translateX(-500px)',
             opacity: '0',
           },
+        },
+        marquee: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-50% - var(--gap)/2))' },
         },
       },
     },
