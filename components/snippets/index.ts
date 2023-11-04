@@ -2,7 +2,6 @@ import { ConfirmButton } from './confirm-button/confirm-button'
 import { DotPattern } from './dot-pattern/dot-pattern'
 import { GridPattern } from './grid-pattern/grid-pattern'
 import { Spotlight } from './spotlight/spotlight'
-import { MagicCard } from './magic-card/magic-card'
 import { MarqueeDemo } from './marquee/marquee'
 import { Meteors } from './meteors/meteors'
 import { PendingButton } from './pending-button/pending-button'
@@ -79,13 +78,6 @@ export const SnippetComponents = [
     title: 'Pending Button',
     description: 'Button with prolonged pending animation',
     Component: PendingButton,
-  },
-  {
-    id: 'Magic-Card',
-    title: 'Magic Card',
-    description: 'Card with hover animation',
-    Component: MagicCard,
-    links: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
   },
   {
     id: 'Dot-Pattern',
