@@ -2,10 +2,9 @@
 
 type RaunoGridProps = {
   colors: Array<string>
-  gridCellSize: number
 }
 
-export function RaunoGrid({ gridCellSize = 80, ...props }: RaunoGridProps) {
+export function RaunoGrid(props: RaunoGridProps) {
   const items = new Array(100).fill(true)
 
   function getBackgroundColor() {
@@ -27,7 +26,7 @@ export function RaunoGrid({ gridCellSize = 80, ...props }: RaunoGridProps) {
 
   return (
     <div
-      className={`[--grid-cell-size:${gridCellSize}px] absolute inset-y-[-200px] inset-x-[-100px] grid grid-cols-[repeat(10,var(--grid-cell-size))] grid-rows-[repeat(10,var(--grid-cell-size))] w-full  skew-y-12 [--border:hsl(0_0%_93.0%_/_0.3)]`}
+      className={`[--grid-cell-size:80px] absolute inset-y-[-200px] inset-x-[-100px] grid grid-cols-[repeat(10,var(--grid-cell-size))] grid-rows-[repeat(10,var(--grid-cell-size))] w-full  skew-y-12 [--border:hsl(0_0%_93.0%_/_0.3)]`}
       style={{ transform: 'skewX(-48deg) skewY(14deg) scaleX(2) scale(0.446484375) rotate(0) translateZ(0)' }}
     >
       {items.map((_, i) => (
@@ -45,5 +44,5 @@ export function RaunoGrid({ gridCellSize = 80, ...props }: RaunoGridProps) {
 const colors = ['hsl(39 100% 57.0%)', 'hsl(151 55.0% 41.5%)', 'hsl(206 100% 50.0%)']
 
 export function RaunoGridDemo() {
-  return <RaunoGrid colors={colors} gridCellSize={80} />
+  return <RaunoGrid colors={colors} />
 }
