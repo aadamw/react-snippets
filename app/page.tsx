@@ -19,7 +19,10 @@ export default function Home() {
     <main className="container mx-auto px-2 gap-4 py-10 min-h-screen flex flex-col justify-between">
       <div>
         <div className="flex justify-center flex-col items-center gap-2">
-          <h1 className="font-medium text-center text-3xl">React UI Snippets</h1>
+          <h1 className="font-semibold text-center text-3xl">React UI Snippets</h1>
+          <p className="text-xs text-white/60 text-center">
+            React UI Snippets is a curated collection of React components crafted with Tailwind CSS + Framer Motion components
+          </p>
           <CreatedByLink />
         </div>
         <div className="grid mt-10 sm:grid-cols-2 gap-4 xl:grid-cols-3  xl:gap-6">
