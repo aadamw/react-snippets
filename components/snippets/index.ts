@@ -1,7 +1,7 @@
 import { ConfirmButton } from './confirm-button/confirm-button'
 import { DotPattern } from './dot-pattern/dot-pattern'
 import { GridPattern } from './grid-pattern/grid-pattern'
-import { MagicCardV2 } from './magic-card-v2/magic-card-v2'
+import { Spotlight } from './spotlight/spotlight'
 import { MagicCard } from './magic-card/magic-card'
 import { MarqueeDemo } from './marquee/marquee'
 import { Meteors } from './meteors/meteors'
@@ -59,6 +59,16 @@ export const SnippetComponents = [
     links: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
   },
   {
+    id: 'Spotlight',
+    title: 'Spotlight',
+    description: 'Card with spotlight animation',
+    Component: Spotlight,
+    links: [
+      { name: 'tailwindcss', href: 'https://tailwindcss.com/' },
+      { name: 'framer-motion', href: 'https://www.framer.com/motion/' },
+    ],
+  },
+  {
     id: 'Confirm-button',
     title: 'Confirm Button',
     description: 'Button with double-click confirmation',
@@ -90,15 +100,5 @@ export const SnippetComponents = [
     description: 'Pattern with grid',
     Component: GridPattern,
     links: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
-  },
-  {
-    id: 'Magic-Card-v2',
-    title: 'Magic Card v2',
-    description: 'Card with hover animation',
-    Component: MagicCardV2,
-    links: [
-      { name: 'tailwindcss', href: 'https://tailwindcss.com/' },
-      { name: 'framer-motion', href: 'https://www.framer.com/motion/' },
-    ],
   },
 ] satisfies Array<SnippetComponent>
