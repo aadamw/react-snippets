@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div className="grid mt-10 sm:grid-cols-2 gap-4 xl:grid-cols-3  xl:gap-6">
           {SnippetComponents.map(({ Component, ...component }) => (
-            <Card key={component.id} title={component.title} technologies={component.technologies} description={component.description}>
+            <Card key={component.id} title={component.title} links={component.links} description={component.description}>
               <Component />
             </Card>
           ))}

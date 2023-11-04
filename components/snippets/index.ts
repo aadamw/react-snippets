@@ -9,7 +9,7 @@ import { PendingButton } from './pending-button/pending-button'
 import { RaunoGridDemo } from './rauno-grid/rauno-grid'
 import { VercelTabs } from './vercel-tabs/vercel-tabs'
 
-export type Technology = {
+export type Link = {
   name: string
   href: string
 }
@@ -19,7 +19,7 @@ type SnippetComponent = {
   title: string
   description: string
   Component: React.FC
-  technologies?: Array<Technology>
+  links?: Array<Link>
 }
 
 export const SnippetComponents = [
@@ -28,7 +28,7 @@ export const SnippetComponents = [
     title: 'Vercel Tabs',
     description: 'Tabs component from Nextjs conf',
     Component: VercelTabs,
-    technologies: [
+    links: [
       { name: 'tailwindcss', href: 'https://tailwindcss.com/' },
       { name: 'radix-ui', href: 'https://www.radix-ui.com/' },
       { name: 'framer-motion', href: 'https://www.framer.com/motion/' },
@@ -39,21 +39,24 @@ export const SnippetComponents = [
     title: 'Meteors',
     description: 'Card with meteors',
     Component: Meteors,
-    technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
+    links: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
   },
   {
     id: 'Rauno-Grid',
     title: 'Rauno Grid',
     description: 'Grid from rauno.me',
     Component: RaunoGridDemo,
-    technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
+    links: [
+      { name: 'tailwindcss', href: 'https://tailwindcss.com/' },
+      { name: 'rauno.me', href: 'https://rauno.me/' },
+    ],
   },
   {
     id: 'Marquee',
     title: 'Marquee',
     description: 'Marquee with animation',
     Component: MarqueeDemo,
-    technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
+    links: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
   },
   {
     id: 'Confirm-button',
@@ -72,28 +75,28 @@ export const SnippetComponents = [
     title: 'Magic Card',
     description: 'Card with hover animation',
     Component: MagicCard,
-    technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
+    links: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
   },
   {
     id: 'Dot-Pattern',
     title: 'Dot Pattern',
     description: 'Pattern with dots',
     Component: DotPattern,
-    technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
+    links: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
   },
   {
     id: 'Grid-Pattern',
     title: 'Grid Pattern',
     description: 'Pattern with grid',
     Component: GridPattern,
-    technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
+    links: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
   },
   {
     id: 'Magic-Card-v2',
     title: 'Magic Card v2',
     description: 'Card with hover animation',
     Component: MagicCardV2,
-    technologies: [
+    links: [
       { name: 'tailwindcss', href: 'https://tailwindcss.com/' },
       { name: 'framer-motion', href: 'https://www.framer.com/motion/' },
     ],

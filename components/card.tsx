@@ -1,12 +1,12 @@
 import * as React from 'react'
 import { ArrowRightUp } from './icons'
-import { Technology } from './snippets'
+import { Link } from './snippets'
 
 type CardProps = {
   children: React.ReactNode
   title: string
   description: string
-  technologies?: Array<Technology>
+  links?: Array<Link>
 }
 
 export function Card(props: CardProps) {
@@ -19,15 +19,15 @@ export function Card(props: CardProps) {
       <div className="py-8 flex justify-center items-center">{props.children}</div>
       <footer className="text-sm text-white/60 z-20">
         <ul className="flex flex-wrap gap-1">
-          {props.technologies?.map(tech => (
-            <li key={tech.name}>
+          {props.links?.map(link => (
+            <li key={link.name}>
               <a
                 target="__blank"
                 rel="noopener noreferrer"
                 className="items-center flex gap-1 hover:underline underline-offset-2 hover:text-white"
-                href={tech.href}
+                href={link.href}
               >
-                {tech.name}
+                {link.name}
                 <ArrowRightUp className="w-4 h-4" />
               </a>
             </li>
