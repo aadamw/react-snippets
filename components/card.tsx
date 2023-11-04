@@ -17,7 +17,7 @@ export function Card(props: CardProps) {
         <span className="text-xs text-white/60">{props.description}</span>
       </div>
       <div className="py-8 flex justify-center items-center">{props.children}</div>
-      <footer className="text-sm text-white/60">
+      <footer className="text-sm text-white/60 z-20">
         <ul className="flex flex-wrap gap-1">
           {props.technologies?.map(tech => (
             <li key={tech.name}>

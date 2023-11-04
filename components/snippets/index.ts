@@ -6,6 +6,7 @@ import { MagicCard } from './magic-card/magic-card'
 import { MarqueeDemo } from './marquee/marquee'
 import { Meteors } from './meteors/meteors'
 import { PendingButton } from './pending-button/pending-button'
+import { RaunoGridDemo } from './rauno-grid/rauno-grid'
 import { VercelTabs } from './vercel-tabs/vercel-tabs'
 
 export type Technology = {
@@ -41,6 +42,20 @@ export const SnippetComponents = [
     technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
   },
   {
+    id: 'Rauno-Grid',
+    title: 'Rauno Grid',
+    description: 'Grid from rauno.me',
+    Component: RaunoGridDemo,
+    technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
+  },
+  {
+    id: 'Marquee',
+    title: 'Marquee',
+    description: 'Marquee with animation',
+    Component: MarqueeDemo,
+    technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
+  },
+  {
     id: 'Confirm-button',
     title: 'Confirm Button',
     description: 'Button with double-click confirmation',
@@ -71,13 +86,6 @@ export const SnippetComponents = [
     title: 'Grid Pattern',
     description: 'Pattern with grid',
     Component: GridPattern,
-    technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
-  },
-  {
-    id: 'Marquee',
-    title: 'Marquee',
-    description: 'Marquee with animation',
-    Component: MarqueeDemo,
     technologies: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
   },
   {
