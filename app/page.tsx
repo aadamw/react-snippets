@@ -1,5 +1,5 @@
 import { Card } from '@/components/card'
-import { SnippetComponents } from '@/components'
+import { SnippetComponents } from '@/components/snippets'
 import { ArrowRightUp } from '@/components/icons'
 
 function CreatedByLink() {

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { ArrowRightUp } from './icons'
-import { Technology } from '.'
+import { Technology } from './snippets'
 
 type CardProps = {
   children: React.ReactNode

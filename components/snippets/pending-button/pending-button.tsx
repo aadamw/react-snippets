@@ -1,6 +1,6 @@
 'use client'
 import * as React from 'react'
-import { Loader } from '../icons'
+import { Loader } from '../../icons'
 
 async function sleep(ms: number) {
   return new Promise<void>(resolve => setTimeout(resolve, ms))

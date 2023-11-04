@@ -24,7 +24,7 @@ export function MagicCardV2() {
     <div onMouseMove={onMouseMove} className="overflow-hidden absolute inset-0 group">
       <div className="pointer-events-none">
         <div className="absolute inset-0 z-0  transition duration-1000 [mask-image:linear-gradient(black,transparent)]" />
-        <motion.div className="absolute inset-0 z-10 bg-zinc-100/10 opacity-100   transition duration-1000" style={style} />
+        <motion.div className="absolute inset-0 z-10 bg-zinc-100/10 opacity-100 transition duration-1000" style={style} />
         <motion.div className="absolute inset-0 z-10 opacity-0 mix-blend-overlay transition duration-1000" style={style} />
       </div>
     </div>
