@@ -5,13 +5,19 @@ import { Link } from './snippets'
 type CardProps = {
   children: React.ReactNode
   title: string
+  href?: string
   description: string
   links?: Array<Link>
 }
 
 export function Card(props: CardProps) {
   return (
-    <article className="min-h-[210px] border relative overflow-hidden w-full grid grid-rows-[max-content,minmax(0,1fr),max-content] border-[hsla(0,0%,100%,0.14)] p-4 rounded-xl">
+    <article className="min-h-[210px] focus-within:bg-zinc-800/50 border relative overflow-hidden w-full grid grid-rows-[max-content,minmax(0,1fr),max-content] border-[hsla(0,0%,100%,0.14)] p-4 rounded-xl">
+      {props.href ? (
+        <a href={props.href} target="__blank" className="absolute top-4 right-4">
+          <ArrowRightUp className="w-4 h-4" />
+        </a>
+      ) : null}
       <div>
         <h2>{props.title}</h2>
         <span className="text-xs text-white/60">{props.description}</span>
