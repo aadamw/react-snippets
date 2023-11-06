@@ -14,7 +14,7 @@ export function Card(props: CardProps) {
   return (
     <article className="min-h-[210px] focus-within:bg-zinc-800/50 border relative overflow-hidden w-full grid grid-rows-[max-content,minmax(0,1fr),max-content] border-[hsla(0,0%,100%,0.14)] p-4 rounded-xl">
       {props.href ? (
-        <a href={props.href} target="__blank" className="absolute top-4 right-4">
+        <a href={props.href} target="__blank" className="absolute top-4 right-4 text-white/60 hover:text-white cursor-pointer">
           <ArrowRightUp className="w-4 h-4" />
         </a>
       ) : null}
