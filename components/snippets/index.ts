@@ -7,6 +7,7 @@ import { Meteors } from './meteors/meteors'
 import { PendingButton } from './pending-button/pending-button'
 import { RaunoGridDemo } from './rauno-grid/rauno-grid'
 import { VercelTabs } from './vercel-tabs/vercel-tabs'
+import { DockDemo } from './dock/dock'
 
 export type Link = {
   name: string
@@ -61,6 +62,17 @@ export const SnippetComponents = [
     href: 'https://github.com/aadamw/react-snippets/blob/master/components/snippets/marquee/marquee.tsx',
     Component: MarqueeDemo,
     links: [{ name: 'tailwindcss', href: 'https://tailwindcss.com/' }],
+  },
+  {
+    id: 'Dock',
+    title: 'Dock',
+    description: 'Dock menu with animation',
+    href: 'https://github.com/aadamw/react-snippets/blob/master/components/snippets/dock/dock.tsx',
+    Component: DockDemo,
+    links: [
+      { name: 'tailwindcss', href: 'https://tailwindcss.com/' },
+      { name: 'framer-motion', href: 'https://www.framer.com/motion/' },
+    ],
   },
   {
     id: 'Spotlight',
